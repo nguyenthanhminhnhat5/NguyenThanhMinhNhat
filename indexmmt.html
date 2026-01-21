@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="vi"><!-- InstanceBegin template="/Templates/templates.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>BCtech</title>
+    <!-- InstanceEndEditable -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1920px;
+        }
+
+        main {
+            display: flex;
+        }
+
+        header {
+            background-color: rgb(0, 153, 153);
+            height: 150px;
+            position: relative;
+        }
+
+        .logo_container {
+            position: relative;
+        }
+
+        .logo_container img {
+            width: 560px;
+            height: auto;
+            top: 20px;
+            left: 30px;
+            position: absolute;
+        }
+
+        form {
+            top: 120px;
+            margin-left: 1650px;
+            position: absolute;
+        }
+
+     
+
+        /* Menu chính */
+        nav .menu {
+            font-size: 18px;
+            background-color: rgb(0, 55, 55);
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+        }
+
+        nav .menu > li {
+            position: relative;
+        }
+
+        nav .menu > li > a {
+            color: white;
+            text-decoration: none;
+            padding: 20px 30px;
+            display: block;
+            height: 60px;
+            line-height: 60px;
+            transition: all 0.3s;
+        }
+
+        nav .menu > li > a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            list-style: none;
+            margin: 0;
+            padding: 10px 0;
+            min-width: 200px;
+            z-index: 1000;
+            border-radius: 5px;
+        }
+
+        .submenu li {
+            margin: 0;
+        }
+
+        .submenu li a {
+            padding: 12px 20px;
+            color: #333;
+            text-decoration: none;
+            display: block;
+            transition: background 0.3s;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+
+        .submenu li:last-child a {
+            border-bottom: none;
+        }
+
+        .submenu li a:hover {
+            color: red;
+            text-decoration: underline;
+
+        }
+
+        nav .menu > li:hover .submenu {
+            display: block;
+        }
+
+        nav.left {
+            width: 20%;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: rgb(153, 255, 255);
+            font-size: 18px;
+        }
+
+        nav.left fieldset {
+            margin: 15px 5px;
+            border: 1px dotted red;
+            padding: 10px 15px;
+            min-height: 150px;
+        }
+
+        nav.left legend {
+            padding: 5px 20px;
+            border: 1px dotted red;
+            font-weight: bold;
+            color: red;
+            background-color: rgb(153, 255, 255);
+        }
+
+        nav.left ul {
+            margin: 10px 0;
+            padding: 0 0 0 20px;
+            list-style-type: square;
+        }
+
+        nav.left ul li {
+            padding: 8px 0;
+            border-bottom: 1px dotted blue;
+            color: #333;
+        }
+
+        nav.left ul li:hover {
+            font-weight: bold;
+            color: blue;
+            border-bottom: 2px solid red;
+            cursor: pointer;
+        }
+
+        .right {
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: rgb(255, 255, 204);
+            flex: 1;
+        }
+
+        .right h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: rgb(0, 55, 55);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .img-responsive {
+            display: block;
+            margin: 20px auto;
+            width: 650px;
+            height: auto;
+            max-width: 100%;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .right p {
+            text-align: justify;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+    </style>
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo_container">
+                <img src="IMAGE\Header-VN-BCTECH-1.png" alt="Trường Cao đẳng Kỹ thuật Công nghệ Bà Rịa - Vũng Tàu">
+            </div>
+            <form>
+                <input type="text" placeholder="Tìm kiếm...">
+                <button type="submit">Tìm kiếm</button>
+            </form>
+        </header>
+        
+        <nav>
+            <ul class="menu">
+                <li><a href="Index.HTML">Trang chủ</a></li>
+                <li class="Tuyensinh">
+                    <a href="#">👤 Tuyển sinh ▼</a>
+                    <ul class="submenu">
+                        <li><a href="#">Thông tin tuyển sinh</a></li>
+                        <li><a href="#">Ngành nghề</a></li>
+                        <li><a href="#">Đăng ký trực tuyến</a></li>
+                        <li><a href="#">Ký túc xá</a></li>
+                    </ul>
+                </li>
+                <li class="SinhVien">
+                    <a href="#">👤 Sinh viên ▼</a>
+                    <ul class="submenu">
+                        <li><a href="#">Thông tin sinh viên</a></li>
+                        <li><a href="#">Lịch thi</a></li>
+                        <li><a href="#">Thời khóa biểu</a></li>
+                        <li><a href="#">Kết quả học tập</a></li>
+                    </ul>
+                </li>
+                <li class="DangKyHoc">
+                    <a href="#">Đăng ký học</a>
+                    <ul class="submenu">
+                        <li><a href="#">Đăng Nhập</a></li>
+                        <li><a href="#">Đăng Ký Nhập Học</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <main>
+            <nav class="left">
+                <fieldset>
+                    <legend>Đăng ký</legend>
+                    <ul>
+                        <li>Đăng Nhập</li>
+                        <li>Đăng Ký Nhập Học</li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Giới Thiệu Ngành Nghề</legend>
+                    <ul>
+                        <li><a href="indexcntt.html">CÔNG NGHỆ THÔNG TIN</a></li>
+                        <li><a href="indextkdh.html">THIẾT KẾ ĐỒ HỌA</a></li>
+                        <li><a href="indexmmt.html">MẠNG MÁY TÍNH</a></li>
+                        <li><a href="indexdckh.html">ĐIỆN CÔNG NGHIỆP</a></li>
+                        <li><a href="indexlh.html">LIÊN HỆ</a></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Liên Thông</legend>
+                    <ul>
+                        <li>ĐH GIAO THÔNG VẬN TẢI</li>
+                    </ul>
+                </fieldset>
+            </nav>
+            <!-- InstanceBeginEditable name="EditRegion" -->
+            <div class="right">
+              <h1>TỔNG QUAN</h1>
+              <p>Logistics là ngành quản lý chuỗi cung ứng, bao gồm các hoạt động như vận tải, kho bãi, lưu trữ, phân phối hàng hóa, thủ tục hải quan và các dịch vụ liên quan. Ngành này đóng vai trò quan trọng trong việc tối ưu hóa quá trình vận chuyển và lưu thông hàng hóa, giúp doanh nghiệp tiết kiệm chi phí và nâng cao hiệu quả hoạt động.</p>
+              <img class="img-responsive" src="IMAGE\logistics.png" alt="Hình ảnh trường Cao đẳng Kỹ thuật Công nghệ Bà Rịa - Vũng Tàu">
+              <p>Thành phố Hồ Chí Minh là trung tâm logistics quan trọng của khu vực phía Nam, với hệ thống cảng biển lớn như Cái Mép – Thị Vải, các khu công nghiệp và cụm cảng phục vụ xuất nhập khẩu. Do đó, nhu cầu nhân lực logistics ngày càng gia tăng. Dự kiến, khi các dự án cảng biển đi vào hoạt động, tỉnh cần khoảng 20.000 lao động trong ngành, từ nhân viên vận hành, quản lý kho bãi đến chuyên gia chuỗi cung ứng. Tuy nhiên, nguồn nhân lực hiện tại còn thiếu cả về số lượng lẫn chất lượng, đặt ra yêu cầu cấp thiết về đào tạo và phát triển nhân lực chuyên sâu cho ngành này.</p>
+            </div>
+            <!-- InstanceEndEditable --></main>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuItems = document.querySelectorAll('.menu > li');
+            
+            menuItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    const submenu = this.querySelector('.submenu');
+                    if (submenu) {
+                        submenu.style.display = 'block';
+                    }
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    const submenu = this.querySelector('.submenu');
+                    if (submenu) {
+                        submenu.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+<!-- InstanceEnd --></html>
